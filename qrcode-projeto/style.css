@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "outfit";
+    src: url(Outfit/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+    --font: "outfit", sans-serif;
+}
+
+
+body{
+    
+    background-color: var(--Lightgray);
+    text-align: center;
+    font-family: var(--font);
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    width: 300px;
+    background-color: var(--white);
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.13); 
+}
+
+.description{
+    width: 250px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+img {
+    max-width: 270px;
+    border-radius: 10%;
+    padding: 15px;
+}
+
+h1 {
+    color: var(--Darkblue);
+    font-size: 21px;
+    margin: 5px;
+}
+
+p{
+    color: var(--Grayishblue);
+}
